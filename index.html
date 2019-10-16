@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta lang="eng">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="CSS/menustyle.css">
+<title> Pc Part Picker</title>
+
+
+</head>
+
+<body>
+
+    <!-- Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark  fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" id="uni-brand" href="#">PC Part Picker</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav" >
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Main Components
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Motherboard</a>
+                            <a class="dropdown-item" href="#">Cpu</a>
+                            <a class="dropdown-item" href="#">Memory</a>
+                            <a class="dropdown-item" href="#">Graphics card</a>
+                        </div>
+                    </li>
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                                Secondary Components          
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">HDD</a>
+                                <a class="dropdown-item" href="#">SSD</a>
+                                <a class="dropdown-item" href="#">Power supply</a>
+                            </div>
+                        </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Miscellaneous      
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Case</a>
+                            <a class="dropdown-item" href="#">Fans</a>
+                            <a class="dropdown-item" href="#">Cpu Coolers</a>
+                        </div>
+                    </li>    
+            </ul>
+            <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item  ">
+                        <a class="nav-link uni-main-link" href=""> 
+                            Login  
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+<!-- Navbar end-->
+
+
+<!-- Main columns-->
+<div class="container-fluid">
+
+
+<div class ="row">
+
+        <!-- Left Column-->
+        <div class="col-sm-2">
+            
+        </div>
+
+
+        <!-- Middle Column-->
+        <div class="col-sm-8" id = "middle-content">
+
+            <!-- Image menu-->
+            <div class="container">
+
+                <!--First ROW-->
+                <div class = "row">
+
+                    <!--EMPTY SPACE-->
+                    <div class="">
+
+                    </div>
+
+
+                    <!-- Left Side-->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <!-- The whole box-->
+                        <div class = "imagemenu-outer-box">
+                            <!-- Upper box where the image is-->
+                            <div class = "imagemenu-inner-image-box">
+                                <img class = "imagemenu-inner-image" src = "IMG/cpu.jpg">
+                            </div>
+
+                            <!-- Bottom box where the title is -->
+                            <div class = "imagemenu-inner-title-box">
+                                <div class="imagemenu-inner-title">
+                                    CPU
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Right Side-->
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <!-- The whole box-->
+                        <div class = "imagemenu-outer-box">
+                            <!-- Upper box where the image is-->
+                            <div class = "imagemenu-inner-image-box">
+                                <img class = "imagemenu-inner-image" src = "IMG/videocard.png">
+                            </div>
+
+                            <!-- Bottom box where the title is -->
+                            <div class = "imagemenu-inner-title-box">
+                                <div class="imagemenu-inner-title">
+                                    Videocard
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!--EMPTY SPACE-->
+                    <div class="">
+                    
+                    </div>
+
+
+                </div> 
+
+
+                <!--SECOND ROW-->
+                <div class = "row">
+
+                        <!--EMPTY SPACE-->
+                        <div class="">
+    
+                        </div>
+    
+    
+                        <!-- Left Side-->
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <!-- The whole box-->
+                            <div class = "imagemenu-outer-box">
+                                <!-- Upper box where the image is-->
+                                <div class = "imagemenu-inner-image-box">
+                                    <img class = "imagemenu-inner-image" src = "IMG/motherboard.png">
+                                </div>
+    
+                                <!-- Bottom box where the title is -->
+                                <div class = "imagemenu-inner-title-box">
+                                    <div class="imagemenu-inner-title">
+                                        Motherboard
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <!-- Right Side-->
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <!-- The whole box-->
+                            <div class = "imagemenu-outer-box">
+                                <!-- Upper box where the image is-->
+                                <div class = "imagemenu-inner-image-box">
+                                    <img class = "imagemenu-inner-image" src = "IMG/memory.png">
+                                </div>
+    
+                                <!-- Bottom box where the title is -->
+                                <div class = "imagemenu-inner-title-box">
+                                    <div class="imagemenu-inner-title">
+                                        Memory
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <!--EMPTY SPACE-->
+                        <div class="">
+                        
+                        </div>
+    
+    
+                    </div> 
+
+                <!--Third ROW-->
+                <div class = "row">
+
+                        <!--EMPTY SPACE-->
+                        <div class="">
+    
+                        </div>
+    
+    
+                        <!-- Left Side-->
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <!-- The whole box-->
+                            <div class = "imagemenu-outer-box">
+                                <!-- Upper box where the image is-->
+                                <div class = "imagemenu-inner-image-box">
+                                    <img class = "imagemenu-inner-image" src = "IMG/hdd.png">
+                                </div>
+    
+                                <!-- Bottom box where the title is -->
+                                <div class = "imagemenu-inner-title-box">
+                                    <div class="imagemenu-inner-title">
+                                        HDD
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <!-- Right Side-->
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <!-- The whole box-->
+                            <div class = "imagemenu-outer-box">
+                                <!-- Upper box where the image is-->
+                                <div class = "imagemenu-inner-image-box">
+                                    <img class = "imagemenu-inner-image" src = "IMG/ssd.png ">
+                                </div>
+    
+                                <!-- Bottom box where the title is -->
+                                <div class = "imagemenu-inner-title-box">
+                                    <div class="imagemenu-inner-title">
+                                        SSD
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <!--EMPTY SPACE-->
+                        <div class="">
+                        
+                        </div>
+    
+    
+                    </div> 
+            </div>
+
+        </div>
+
+        <!-- Right Column-->
+        <div class="col-sm-2">
+            
+        </div>
+</div>
+
+</div>
+
+
+
+<script src = "JS/index.js"></script>
+</body>
+
+
+
+</html>
