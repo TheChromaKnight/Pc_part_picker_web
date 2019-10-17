@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(233, 227, 227);
+    margin-top: 60px;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+@media screen and (max-width:1250px)
+{
+    body{
+        background-color:  rgb(52, 56, 56);
+    }
+}
+@media screen and (max-width:700px)
+{
+    body{
+        margin-top: 10px;
+    }
+}
+#middle-content{
+    height:910px;
+    background-color: rgb(52, 56, 56);
+    font-size: 27px;
+    padding-top:70px;
+    color:blanchedalmond;
+    
+}

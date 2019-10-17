@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta lang="eng">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="CSS/menustyle.css">
-<title> Pc Part Picker</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta lang="eng">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../../CSS/Base_style/menustyle.css">
+        <link rel="stylesheet" href="../../CSS/Base_style/backgroundstyle.css">
+        <link rel="stylesheet" href="../../CSS/Index_style/indexstyle.css">
+        <title> Pc Part Picker</title>
 
-
-</head>
+    </head>
 
 <body>
 
     <!-- Navbar-->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark  fixed-top">
+    <nav class="navbar navbar-expand-xl bg-dark navbar-dark  fixed-top">
         <!-- Brand -->
-        <a class="navbar-brand" id="uni-brand" href="#">PC Part Picker</a>
+        <a class="navbar-brand" id="uni-brand" href="index.html">PC Part Picker</a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -29,44 +30,48 @@
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav" >
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
-                            Main Components
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Motherboard</a>
-                            <a class="dropdown-item" href="#">Cpu</a>
-                            <a class="dropdown-item" href="#">Memory</a>
-                            <a class="dropdown-item" href="#">Graphics card</a>
-                        </div>
-                    </li>
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
-                                Secondary Components          
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">HDD</a>
-                                <a class="dropdown-item" href="#">SSD</a>
-                                <a class="dropdown-item" href="#">Power supply</a>
-                            </div>
-                        </li>
                 <!-- Dropdown -->
                 <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
-                            Miscellaneous      
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Case</a>
-                            <a class="dropdown-item" href="#">Fans</a>
-                            <a class="dropdown-item" href="#">Cpu Coolers</a>
-                        </div>
-                    </li>    
+                    <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        Main Components
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../Motherboard/motherboard.html">Motherboard</a>
+                        <a class="dropdown-item" href="../Cpu/cpu.html">Cpu</a>
+                        <a class="dropdown-item" href="../Memory/memory.html">Memory</a>
+                        <a class="dropdown-item" href="../Videocard/videocard.html">Graphics card</a>
+                    </div>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        Secondary Components          
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../Hdd/hdd.html">HDD</a>
+                        <a class="dropdown-item" href="../Ssd/ssd.html">SSD</a>
+                        <a class="dropdown-item" href="../Power_supply/powersupply.html">Power supply</a>
+                    </div>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        Miscellaneous      
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../Case/case.html">Case</a>
+                        <a class="dropdown-item" href="../Fan/fan.html">Fans</a>
+                        <a class="dropdown-item" href="../Cpu_cooler/cpucooler.html">Cpu Coolers</a>
+                    </div>
+                </li>
+                <!--Search bar-->
+                <li class = "nav-item nav-link ">
+                    <input type="search" id="menu-search-input"  placeholder="Click to open..." name="menuSearch" >
+                </li>
             </ul>
             <ul class="navbar-nav  ml-auto">
                     <li class="nav-item  ">
-                        <a class="nav-link uni-main-link" href=""> 
+                        <a class="nav-link uni-main-link" href="../Login/login.html"> 
                             Login  
                         </a>
                     </li>
@@ -109,7 +114,9 @@
                         <div class = "imagemenu-outer-box">
                             <!-- Upper box where the image is-->
                             <div class = "imagemenu-inner-image-box">
-                                <img class = "imagemenu-inner-image" src = "IMG/cpu.jpg">
+                                <a href="../Cpu/cpu.html">
+                                    <img class = "imagemenu-inner-image" src = "../../IMG/cpu.jpg">
+                                </a>
                             </div>
 
                             <!-- Bottom box where the title is -->
@@ -128,7 +135,9 @@
                         <div class = "imagemenu-outer-box">
                             <!-- Upper box where the image is-->
                             <div class = "imagemenu-inner-image-box">
-                                <img class = "imagemenu-inner-image" src = "IMG/videocard.png">
+                                <a href="../Videocard/videocard.html">
+                                    <img class = "imagemenu-inner-image" src = "../../IMG/videocard.png">
+                                </a>
                             </div>
 
                             <!-- Bottom box where the title is -->
@@ -165,7 +174,9 @@
                             <div class = "imagemenu-outer-box">
                                 <!-- Upper box where the image is-->
                                 <div class = "imagemenu-inner-image-box">
-                                    <img class = "imagemenu-inner-image" src = "IMG/motherboard.png">
+                                    <a href="../Motherboard/motherboard.html">
+                                        <img class = "imagemenu-inner-image" src = "../../IMG/motherboard.png">
+                                    </a>    
                                 </div>
     
                                 <!-- Bottom box where the title is -->
@@ -184,7 +195,9 @@
                             <div class = "imagemenu-outer-box">
                                 <!-- Upper box where the image is-->
                                 <div class = "imagemenu-inner-image-box">
-                                    <img class = "imagemenu-inner-image" src = "IMG/memory.png">
+                                    <a href="../Memory/memory.html">
+                                        <img class = "imagemenu-inner-image" src = "../../IMG/memory.png">
+                                    </a>
                                 </div>
     
                                 <!-- Bottom box where the title is -->
@@ -220,7 +233,7 @@
                             <div class = "imagemenu-outer-box">
                                 <!-- Upper box where the image is-->
                                 <div class = "imagemenu-inner-image-box">
-                                    <img class = "imagemenu-inner-image" src = "IMG/hdd.png">
+                                    <img class = "imagemenu-inner-image" src = "../../IMG/hdd.png">
                                 </div>
     
                                 <!-- Bottom box where the title is -->
@@ -239,7 +252,7 @@
                             <div class = "imagemenu-outer-box">
                                 <!-- Upper box where the image is-->
                                 <div class = "imagemenu-inner-image-box">
-                                    <img class = "imagemenu-inner-image" src = "IMG/ssd.png ">
+                                    <img class = "imagemenu-inner-image" src = "../../IMG/ssd.png ">
                                 </div>
     
                                 <!-- Bottom box where the title is -->
@@ -273,7 +286,7 @@
 
 
 
-<script src = "JS/index.js"></script>
+<script src = "index.js"></script>
 </body>
 
 
