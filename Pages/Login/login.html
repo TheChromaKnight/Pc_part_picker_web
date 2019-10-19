@@ -35,10 +35,10 @@
                             Main Components
                         </a>
                         <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Motherboard</a>
-                            <a class="dropdown-item" href="#">Cpu</a>
-                            <a class="dropdown-item" href="#">Memory</a>
-                            <a class="dropdown-item" href="#">Graphics card</a>
+                            <a class="dropdown-item" href="../Motherboard/motherboard.html">Motherboard</a>
+                            <a class="dropdown-item" href="../Cpu/cpu.html">Cpu</a>
+                            <a class="dropdown-item" href="../Memory/memory.html">Memory</a>
+                            <a class="dropdown-item" href="../Videocard/videocard.html">Graphics card</a>
                         </div>
                     </li>
                     <!-- Dropdown -->
@@ -68,15 +68,6 @@
                         <input type="search" id="menu-search-input"  placeholder="Click to open..." name="menuSearch">
                     </li>
             </ul>
-            <!--
-            <ul class="navbar-nav  ml-auto">
-                <li class="nav-item  ">
-                    <a class="nav-link uni-main-link" href=""> 
-                        Login  
-                    </a>
-                </li>
-            </ul>
-            --> 
         </div>
     </nav>
 <!-- Navbar end-->
@@ -88,97 +79,106 @@
     <div class ="row">
     
         <!-- Left Column-->
-        <div class="col-sm-2">
+        <div class="col-sm-0 col-lg-2 col-md-1 col-0">
                 
         </div>
     
     
         <!-- Middle Column-->
-        <div class="col-sm-8" id = "middle-content">
+        <div class="col-sm-12 col-lg-8 col-md-10 col-12" id = "middle-content">
 
-            <div class="row">
-                <div class="col-lg-2">
+            <div class="container">
 
-                </div>
-                <!--Login box start-->
-                <div class="col-lg-8">
-                    <!--The box itself-->
-                    <div class = "login-box">
-                        <!--Menu of login box-->
-                        <ul class="login-box-menu">
-                            <li class="login-box-item">
-                                <a class = "login-box-button">
-                                    Login
-                                </a>
-                            </li>
-                            <li class="login-box-item">
-                                <a class = "login-box-button">
-                                    New account
-                                </a>
-                            </li>
-                        </ul>
-                        <!--Menu of login box end-->
+                <div class="row">
+                    <!--LEFT SIDE-->
+                    <div class="col-lg-1">
 
-                        <!-- Email-->
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="login-box-label">Email:</label>
+                    </div>
+                    <!--Login box start-->
+                    <div class="col-lg-10">
+                        <!--The box itself-->
+                        <div class = "login-box">
+                            <!--Menu of login box-->
+                            <ul class="login-box-menu">
+                                <li class="login-box-item">
+                                    <a class = "login-box-menu-button">
+                                        Sign in
+                                    </a>
+                                </li>
+                                <li class="login-box-item">
+                                    <a class = "login-box-menu-button">
+                                        New account
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--Menu of login box end-->
+
+                            <!-- Email-->
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="login-box-label">Email:</label>
+                                </div>
+                                <div class="col-md-9 inputPlace">
+                                    <input class="login-box-input" id="emailLogin" type="email" placeholder="Email...">
+
+                                    <!--Hidden at first, then it will be visible for the sign up and the upper input becomes hidden -->
+                                    <input class="login-box-input" id="emailSignUp" type="email" placeholder="Email...">
+                                </div>
                             </div>
-                            <div class="col-md-9">
-                                <input class="login-box-input" type="email" placeholder="Email...">
-                            </div>
-                        </div>
 
-                        <!-- Error message-->
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label class="login-box-error-message">Place of Error message</label>
-                            </div>
-                        </div>
-
-                        <!--Password-->
-                        <div class="row">
-                            <div class="col-md-3">
-                                <label class="login-box-label">Password</label>
-                            </div>
-                            <div class="col-md-9">
-                                <input class="login-box-input" type="password" placeholder="Password...">
-                            </div>
-                        </div>
-
-                        <!-- Error message-->
-                        <div class="row">
+                            <!-- Error message-->
+                            <div class="row">
                                 <div class="col-md-12">
                                     <label class="login-box-error-message">Place of Error message</label>
                                 </div>
-                        </div>
-
-                        <!--Login/Create new account button (JAVASCRIPT)-->
-
-                        <div class="row">
-                            <div class ="login-button">
-                                <button>Login</button>
-
                             </div>
+
+                            <!--Password-->
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <label class="login-box-label">Password:</label>
+                                </div>
+                                <div class="col-md-9 inputPlace">
+                                    <input class="login-box-input" id="passwordLogin" type="password" placeholder="Password...">
+
+                                    <!--Hidden at first, then it will be visible for the sign up and the upper input becomes hidden -->
+                                    <input class="login-box-input" id="passwordSignUp" type="password" placeholder="Password...">
+                                </div>
+                            </div>
+
+                            <!-- Error message-->
+                            <div class="row">
+                                    <div class="col-md-12">
+                                        <label class="login-box-error-message">Place of Error message</label>
+                                    </div>
+                            </div>
+
+                            <!--Login/Create new account button (JAVASCRIPT)-->
+                            <div class="row">
+                                <div>
+                                    <button class ="login-box-button">Login</button>
+                                    <button class ="login-box-button">Sign up</button>
+                                </div>
+                            </div>
+        
+
                         </div>
-                        <!--STOP make the login box responsive and change the color STOP-->
-    
+                    </div>
+                    <!--Login box end-->
+
+                    <!--RIGHT SIDE-->
+                    <div class="col-lg-1">
 
                     </div>
-                </div>
-                <!--Login box end-->
-
-                <div class="col-lg-2">
 
                 </div>
 
             </div>
 
-
         </div>
 
         <!-- Right Column-->
-        <div class="col-sm-2">
+        <div class="col-sm-0 col-lg-8 col-md-1 col-0">
             
         </div>
 
