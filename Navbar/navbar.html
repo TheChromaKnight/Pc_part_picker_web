@@ -1,0 +1,63 @@
+<!-- Navbar start-->
+<nav class="navbar navbar-expand-xl bg-dark navbar-dark  fixed-top">
+    <!-- Brand -->
+    <a class="navbar-brand" id="uni-brand" href="../Index/index.html">PC Part Picker</a>
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav" >
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        Main Components
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../Motherboard/motherboard.html">Motherboard</a>
+                        <a class="dropdown-item" href="../Cpu/cpu.html">Cpu</a>
+                        <a class="dropdown-item" href="../Memory/memory.html">Memory</a>
+                        <a class="dropdown-item" href="../Videocard/videocard.html">Graphics card</a>
+                    </div>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        Secondary Components          
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">HDD</a>
+                        <a class="dropdown-item" href="#">SSD</a>
+                        <a class="dropdown-item" href="#">Power supply</a>
+                    </div>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle uni-main-link" href="#" id="navbardrop" data-toggle="dropdown">
+                        Miscellaneous      
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Case</a>
+                        <a class="dropdown-item" href="#">Fans</a>
+                        <a class="dropdown-item" href="#">Cpu Coolers</a>
+                    </div>
+                </li>
+                <!--Search bar-->
+                <li class = "nav-item nav-link ">
+                    <input type="search" id="menu-search-input"  placeholder="Click to open..." name="menuSearch">
+                </li>
+        </ul>
+        <!-- Login. Only visible in the main menu (when we are at the login.html file this is not visible) -->
+        <ul class="navbar-nav  ml-auto" id="hidden">
+            <li class="nav-item  ">
+                <a class="nav-link uni-main-link" href="../Login/login.html"> 
+                    Login  
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Navbar end-->

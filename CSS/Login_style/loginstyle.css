@@ -141,3 +141,6 @@
         font-size:19px;
     }
 }
+#hidden{
+    visibility: hidden;
+}
